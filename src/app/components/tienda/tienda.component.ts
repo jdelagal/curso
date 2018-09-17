@@ -9,7 +9,8 @@ import {Component, Input} from '@angular/core';
 
 export class TiendaComponent {
     public titulo;
-
+    
+    public miParque;
     @Input() public nombreDelParque:string ;
 
 
@@ -20,5 +21,10 @@ export class TiendaComponent {
 
     mostrarNombre(){
         console.log('Resultado: '+this.nombreDelParque);
+    }
+
+    verDatosParque(event){
+        console.log("Evento: "+event);
+        this.miParque = event;
     }
 }
