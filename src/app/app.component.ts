@@ -1,4 +1,4 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,10 +8,20 @@ import { Component, DoCheck } from '@angular/core';
 
 })
 
-export class AppComponent implements DoCheck {
+export class AppComponent implements DoCheck, OnInit {
   title = 'Curso de Angular';
-  
+  emailContacto: string;
+  ngOnInit(){
+    console.log(localStorage.getItem('emailContacto') );
+    this.emailContacto=localStorage.getItem('emailContacto');
+  }
   ngDoCheck(){
     console.log("ngDoCheck");
+    this.emailContacto=localStorage.getItem('emailContacto');
+  }
+  borrarEmail(){
+    localStorage.removeItem('emailContacto');
+    localStorage.clear();
+    this.emailContacto=null;
   }
 }
