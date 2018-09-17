@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
     selector: 'tienda',
@@ -10,7 +10,15 @@ import {Component} from '@angular/core';
 export class TiendaComponent {
     public titulo;
 
+    @Input() public nombreDelParque:string ;
+
+
     constructor(){
         this.titulo = 'Esta es la tienda';
+
+    }
+
+    mostrarNombre(){
+        console.log('Resultado: '+this.nombreDelParque);
     }
 }
