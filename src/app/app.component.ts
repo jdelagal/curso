@@ -9,7 +9,7 @@ import { Component, DoCheck } from '@angular/core';
 })
 
 export class AppComponent implements DoCheck {
-  title = 'curso';
+  title = 'Curso de Angular';
   
   ngDoCheck(){
     console.log("ngDoCheck");
