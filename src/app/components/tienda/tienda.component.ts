@@ -41,4 +41,8 @@ export class TiendaComponent implements OnInit{
         });
        
     }
+
+    keyupHandler(content){
+        console.log(content);
+    }
 }

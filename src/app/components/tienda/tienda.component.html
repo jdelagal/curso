@@ -7,6 +7,14 @@
 <div id="caja" style="border:1px solid black;width: 150px; heigth:50px">
     Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba Texto de prueba 
 </div>
+
+<p>   
+        <app-tiny-editor
+        [elementId]="'my-editor'"
+        (onEditorContentChange)="keyupHandler($event)"
+        >
+      </app-tiny-editor>
+</p>
 <hr>
 
 Padre:

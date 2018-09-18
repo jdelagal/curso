@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+
 import {routing, appRoutingProviders} from './app.routing';
 
 //Componentes
@@ -16,6 +17,7 @@ import { AnimalsComponent } from './components/animals/animals.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { KeepersComponent } from './components/keepers/keepers.component';
+import { TinyEditorComponent } from './tiny-editor/tiny-editor.component';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     AnimalsComponent,
     ContactComponent,
     HomeComponent,
-    KeepersComponent
+    KeepersComponent,
+    TinyEditorComponent
   ],
 
   imports: [
