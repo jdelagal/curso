@@ -1,4 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+declare var JQuery:any;
+declare var $:any;
 
 @Component({
     selector: 'tienda',
@@ -7,7 +9,7 @@ import {Component, Input} from '@angular/core';
     
 })
 
-export class TiendaComponent {
+export class TiendaComponent implements OnInit{
     public titulo;
     
     public miParque;
@@ -26,5 +28,12 @@ export class TiendaComponent {
     verDatosParque(event){
         console.log("Evento: "+event);
         this.miParque = event;
+    }
+    ngOnInit(){
+        $('#textojq').hide();
+        $('#botonjq').click(function(){
+            $('#textojq').slideToggle();
+           // $('#textojq').removeClass('hidden').slideToggle();
+        });
     }
 }
