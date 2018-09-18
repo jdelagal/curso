@@ -9,7 +9,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 })
 
 export class AppComponent implements DoCheck, OnInit {
-  title = 'Curso de Angular';
+  title = 'NGZOO';
   emailContacto: string;
   ngOnInit(){
     console.log(localStorage.getItem('emailContacto') );
