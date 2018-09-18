@@ -30,10 +30,15 @@ export class TiendaComponent implements OnInit{
         this.miParque = event;
     }
     ngOnInit(){
+        $('#caja').dotdotdot({
+            height: 30
+        });
+
         $('#textojq').hide();
         $('#botonjq').click(function(){
             $('#textojq').slideToggle();
            // $('#textojq').removeClass('hidden').slideToggle();
         });
+       
     }
 }

@@ -24,7 +24,8 @@
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26",
     "jquery": "1.12",
-    "bootstrap": "3.3.6"
+    "bootstrap": "3.3.6",
+    "jquery-dotdotdot": "1.8.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
