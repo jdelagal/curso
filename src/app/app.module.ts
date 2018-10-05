@@ -22,6 +22,7 @@ import { HomeComponent } from './components/home/home.component';
 import { KeepersComponent } from './components/keepers/keepers.component';
 import { TinyEditorComponent } from './tiny-editor/tiny-editor.component';
 
+import {AdminModule} from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TinyEditorComponent } from './tiny-editor/tiny-editor.component';
     HttpModule,
     ReactiveFormsModule,
     routing,
-    ModuloEmailModule
+    ModuloEmailModule,
+    AdminModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
