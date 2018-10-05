@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 
 import {routing, appRoutingProviders} from './app.routing';
 
+//importar nuevo modulo
+import {ModuloEmailModule} from  './moduloemail/moduloemail.module';
+
 //Componentes
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { ParquesComponent } from './components/parques/parques.component';
@@ -37,7 +40,8 @@ import { TinyEditorComponent } from './tiny-editor/tiny-editor.component';
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
-    routing
+    routing,
+    ModuloEmailModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
